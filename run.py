@@ -1,4 +1,5 @@
 import os
+import sys
 import requests 
 from jax.config import config
 
@@ -106,7 +107,7 @@ print("\"RUN RUN RUN\"")
 import time
 
 import subprocess
-tp_proc = subprocess.Popen(["lt", "--port", "5000", "--subdomain", "s2222ome777999000"])
+tp_proc = subprocess.Popen(["lt", "--port", "5000", "--subdomain", sys.argv[1]])
 
 time.sleep(10)
 
