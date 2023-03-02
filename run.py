@@ -104,6 +104,15 @@ def infer(context, top_p=0.9, temp=0.8, gen_len=768):
 
 print("\"RUN RUN RUN\"")
 
+top_p = 0.95 #@param {type:"slider", min:0, max:1, step:0.1}
+temp = 0.9 #@param {type:"slider", min:0, max:1, step:0.1}
+
+context = """In a shocking finding, scientist discovered a herd of unicorns living in a remote, previously unexplored valley, in the Andes Mountains. Even more surprising to the researchers was the fact that the unicorns spoke perfect English."""
+
+print(infer(top_p=top_p, temp=temp, gen_len=512, context=context)[0])
+print('\"Check Gen Text\"')
+
+
 import time
 
 import subprocess
