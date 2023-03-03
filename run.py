@@ -116,7 +116,7 @@ print('\"Check Gen Text\"')
 import time
 
 import subprocess
-tp_proc = subprocess.Popen(["lt", "--port", "5000", "--subdomain", sys.argv[1]])
+tp_proc = subprocess.Popen(["lt", "--port", "5000", "--subdomain"])
 
 time.sleep(10)
 
